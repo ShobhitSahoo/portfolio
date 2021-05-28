@@ -1,0 +1,33 @@
+<!--header-->
+    <header class="header">
+        <h1 class="header-primary">Contact Me</h1>
+        <center><h2 class="header-secondary">Available for questions, collaborations & coffee
+        <img class="tara" src="./../assets/✨.svg" alt="tara">
+        </center></h2>
+    </header>
+
+    <main class="contact-main">
+        <img class="contact-img" src="./../assets/contactsmall.png">
+        <div class="form">
+            <form class="form-container" method="POST" action="/api/v1/sendMail" id="Contact">
+                <label for="fname">
+                    Name
+                </label>
+                <br> <br>
+                <input class="fname" type="text" id= "fname" placeholder="Your Name" name="name" required> <br> <br>
+
+                <label for="email">
+                    Email
+                </label><br> <br>
+                <input class="email" type="email" id= "email" placeholder="Your Email" name="email" required><br> <br>
+
+                <label for="Message">
+                    Message
+                </label><br> <br>
+                <textarea class="Message" id= "message" placeholder="Your Message" name="message" required></textarea> <br> <br> <br> 
+              <button class="btn" type="submit" id="btn" value= "Submit" form="Contact">Send</button><br> <br>
+            </form>
+            
+        </div>
+
+    </main>
