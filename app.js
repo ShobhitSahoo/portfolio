@@ -62,7 +62,7 @@ async function main(requ, res) {
 
   let info = await transporter.sendMail({
     from: `${requ.name}`, 
-    to: "Ankit mohantyankit18@gmail.com", 
+    to: process.env.EMAIL, 
     subject: `Mail from ${requ.name} from Portfolio`, // Subject line
     text: `${requ.message}\nYou can reply to ${requ.name} using ${requ.email}`, 
   });
